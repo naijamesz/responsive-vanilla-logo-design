@@ -1,3 +1,5 @@
+import icon from './images/icon-burger-menu.svg';
+
 import './style.css';
 // import './css-reset.css';
 import { content } from './Content';
@@ -14,7 +16,7 @@ document.querySelector('#app').innerHTML = `
 
                 <div class="mob-wrapper">
 
-                    <img src="images/icon-burger-menu.svg" alt="Mobile Menu Icon" style="width: 40px;" class="burgermenu">
+                    <img src=${icon} alt="Mobile Menu Icon" style="width: 40px;" class="burgermenu">
 
                     <div class="mob-nav">
                         <a href="#" class="navbutton">ABOUT</a>
@@ -29,12 +31,12 @@ document.querySelector('#app').innerHTML = `
         </div>
         ${content}
 `;
-const burgerMenu = document.querySelector('.burgermenu');
-const mobNav = document.querySelector('.mob-nav');
+// const burgerMenu = document.querySelector('.burgermenu');
+// const mobNav = document.querySelector('.mob-nav');
 
-document.ready(function () {
-  burgerMenu.addEventListener('click', e => {
-    mobNav.toggle();
-  });
-});
+// document.ready(function () {
+//   burgerMenu.addEventListener('click', e => {
+//     mobNav.toggle();
+//   });
+// });
 // setupCounter(document.querySelector('#counter'));
